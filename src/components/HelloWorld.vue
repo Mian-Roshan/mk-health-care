@@ -17,7 +17,7 @@
             rel="noopener noreferrer"
             target="_blank"
             variant="text"
-            color="primary"
+            :color="props.color"
           >
             <v-icon
               icon="mdi-view-dashboard"
@@ -37,7 +37,7 @@
             size="x-large"
             target="_blank"
             variant="flat"
-            color="primary"
+            :color="props.color"
           >
             <v-icon
               icon="mdi-speedometer"
@@ -63,7 +63,7 @@
               start
             />
 
-            Community
+            {{ props.text }}
           </v-btn>
         </v-col>
       </v-row>
@@ -72,5 +72,13 @@
 </template>
 
 <script lang="ts" setup>
-  //
+   const props = withDefaults(defineProps<{
+      color?: string,
+      text?: string
+    }>(),
+    {
+      color: '#000',
+      text: ''
+    }
+  )
 </script>
