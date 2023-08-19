@@ -7,7 +7,6 @@ declare module 'vue' {
     Button: typeof import('./src/components/styled/Button.ts')['default']
     Default: typeof import('./src/layouts/default/Default.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    StyledButton: typeof import('./src/components/styled/StyledButton.js')['default']
     View: typeof import('./src/layouts/default/View.vue')['default']
   }
 }
