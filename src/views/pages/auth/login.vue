@@ -24,8 +24,9 @@
           Sign in
         </v-btn>
       </v-form>
-      <h2 class="mt-4">
-        <a> Forgot Password ? </a>
+      
+      <h2 class="mt-4 link">
+        <a href="/pages/auth/passwordrecovery"> Forgot Password ? </a>
       </h2>
     </div>
    </div>
@@ -53,6 +54,12 @@
       font-weight: 900;
       margin-top: 20px;
       color: #fff;
+    }
+  }
+  .link {
+    a {
+      text-decoration: none;
+      color: inherit;
     }
   }
 </style>
