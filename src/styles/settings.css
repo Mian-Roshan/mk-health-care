@@ -1,0 +1,48 @@
+body {
+  background: #fafafa !important;
+}
+
+.container {
+  margin: 120px 0;
+  padding-top: 120px;
+}
+
+.header {
+  margin: 0px 120px;
+  padding: 26px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header a {
+  text-decoration: none;
+  color: #08102f;
+  font-size: 16px;
+  font-weight: 600;
+}
+.header .header-logo a {
+  display: inline-flex;
+  align-items: center;
+}
+.header .header-logo a .logo-txt {
+  margin-left: 10px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.header .menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto !important;
+}
+.header .menu-list li a {
+  margin-left: 40px;
+}
+.header .header-btn {
+  color: #FAB915;
+  padding: 12px 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}/*# sourceMappingURL=settings.css.map */

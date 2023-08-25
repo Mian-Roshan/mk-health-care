@@ -4,23 +4,26 @@
 </script>
 
 <template>
-   <div>
+  <div>
+    <div class="header">
+      <div class="header-logo">
+        <HeaderLogo />
+      </div>
+    </div>
     <div class="wrapper d-flex flex-column justify-center align-center">
-      <h1>Recover Password</h1>
-      <!-- <h1 class="mt-2">Recover Password</h1> -->
-      <p class="mt-2">Please enter your email acount to recover your lost password.</p>
+      <h1>Create Account</h1>
+      <h1 class="mt-2">Choose AccountType</h1>
       <v-form class="form" id="login-form" action="">
-        <v-text-field
-          variant="solo-filled"
-          label="Email"
-          placeholder="User@gmial.com"
-        ></v-text-field>
         <v-btn class="action-btn">
-          Submit
+            Health Care Provider
+        </v-btn>
+        <h2 class="mt-5 text-center">Or</h2>
+        <v-btn class="action-btn">
+            Patient
         </v-btn>
       </v-form>
     </div>
-   </div>
+  </div>
 </template>
 
 <style scoped lang="scss">
@@ -45,6 +48,12 @@
       font-weight: 900;
       margin-top: 20px;
       color: #fff;
+    }
+  }
+  .link {
+    a {
+      text-decoration: none;
+      color: inherit;
     }
   }
 </style>
