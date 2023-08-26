@@ -20,7 +20,5 @@
 </template>
 
 <style scoped lang="scss">
-  .text-1 {
-    color: $black;
-  }
+
 </style>
