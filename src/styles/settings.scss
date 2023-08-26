@@ -3,8 +3,8 @@ body {
     background: #fafafa !important;
 }
 .container {
-    margin: 120px 0;
-    padding-top: 120px;
+    margin: 0 120px;
+    padding: 60px 0;
 }
 
 .header {
@@ -36,12 +36,25 @@ body {
       margin-right: auto !important;
       li a{
         margin-left: 40px;
+        &.active {
+          padding: 5px 10px;
+          border-radius: 4px;
+          background: $primary;
+        }
       }
     }
     .header-btn {
-      color: #FAB915;
+      color: #fff;
       padding: 12px 40px;
-      background-color: #ffffff;
+      background-color:$primary;
       border-radius: 8px;
     }
   }
+  header {
+    background-color: #FAFBFF;
+    .header-btn {
+        background-color: #FAB915;
+        color: #fff;
+    }
+}
+

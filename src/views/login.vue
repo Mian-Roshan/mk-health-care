@@ -31,7 +31,7 @@
       </v-form>
       
       <h2 class="mt-4 link">
-        <router-link to="/passwordrecovery"> Forgot Password ? </router-link>
+        <router-link to="/password-recovery"> Forgot Password ? </router-link>
       </h2>
     </div>
   </div>

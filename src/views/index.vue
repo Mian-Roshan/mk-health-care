@@ -1,44 +1,16 @@
 <script lang="ts" setup>
+import PageFooter from '@/components/PageFooter.vue';
+import PageHeader from '@/components/PageHeader.vue';
+
 // import { useTheme } from 'vuetify'
 // const $vuetify = useTheme()
 // const color = $vuetify.current.value.colors;
 </script>
 <template>
   <div>
-    <header>
-      <div class="header">
-        <div class="header-logo" style="min-width:25%;">
-          <HeaderLogo />
-        </div>
-        <ul class="menu-list">
-          <li>
-            <a href="">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Provider
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Provider
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Request care
-            </a>
-          </li>
-        </ul>
-        <router-link to="/login">
-          <button class="header-btn">
-            Login
-          </button>
-        </router-link>
-      </div>
-    </header>
+    <div id="header">
+      <PageHeader />
+    </div>
     <main>
       <section>
         <div class="hero-sec">
@@ -220,89 +192,7 @@
       </section>
     </main>
     <footer>
-      <section class="container-box">
-        <div class="section footer-sec">
-          <div class="footer-logo-side">
-            <div>
-              <img src="../assets/svg/MK-logo.svg" alt="stethoscope" height="51px">
-            </div>
-            <div>
-              <p style="width: 30%; margin-top: 25px;">
-                Logoipsumoffers a wide range of properties of the highest quality. Using Mostrew, finding a new place to
-                live has become much easier.
-              </p>
-            </div>
-          </div>
-          <div class="content footer-content">
-            <div class="footer-content-lists">
-
-              <div class="footer-list">
-                <ul>
-                  <li>
-                    about us
-                  </li>
-                  <li>
-                    123
-                  </li>
-                  <li>
-                    123
-                  </li>
-                  <li>
-                    123
-                  </li>
-                  <li>
-                    123
-                  </li>
-                  <li>
-                    123
-                  </li>
-                </ul>
-              </div>
-              <div class="footer-list">
-                <ul>
-                  <li>
-                    Servies
-                  </li>
-                  <li>
-                    123
-                  </li>
-                  <li>
-                    123
-                  </li>
-                  <li>
-                    123
-                  </li>
-                  <li>
-                    123
-                  </li>
-                </ul>
-              </div>
-              <div class="footer-list">
-                <ul>
-                  <li>
-                    COMPANY
-                  </li>
-                  <li>
-                    123
-                  </li>
-                  <li>
-                    123
-                  </li>
-                  <li>
-                    123
-                  </li>
-                  <li>
-                    123
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div style="margin-top: 50px;">
-              <span>Contact</span> <b style="color: #fff; margin: 0 10px;">hello@logoipsum.io</b>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageFooter />
     </footer>
   </div>
 </template>
@@ -339,7 +229,7 @@ main {
   .hero-btn {
     color: #ffffff;
     padding: 12px 40px;
-    background-color: #FAB915;
+    background-color: $primary;
     border-radius: 8px;
     margin-top: 64px;
   }
@@ -414,7 +304,6 @@ main {
           border-radius: 10px;
           margin: auto;
         }
-
         .process-text {
           font-size: 20px;
           text-align: center;
@@ -424,7 +313,6 @@ main {
         }
       }
     }
-
     .number {
       width: 40%;
       text-align: center;
@@ -438,40 +326,15 @@ main {
     }
   }
 }
-
-.footer-sec {
-  background: #37474F;
-  padding: 120px;
-  margin-top: 120px;
-  display: flex;
-  justify-content: space-between;
-  color: #adadad;
-  font-size: 18px;
-
-  .footer-content {
-    width: 50%;
-
-
-    text-align: start;
-
-    .footer-content-lists {
-      display: flex;
-      justify-content: space-between;
-      align-items: start !important;
-
-      ul {
-
-        li {
-          list-style: none;
-          margin-bottom: 15px;
-
-          &:first-child {
-            font-weight: bold;
-            color: #fff;
-            text-transform: uppercase;
-          }
-        }
-      }
-    }
+</style>
+<style lang="scss">
+#header {
+  header {
+    background-color: unset;
   }
-}</style>
+  .header-btn {
+   background-color: #fff;
+    color: $primary;
+  }
+}
+</style>
