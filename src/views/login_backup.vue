@@ -8,7 +8,7 @@
 </script>
 
 <template>
-    <div class='text-1' :style="{padding: '10px', backgroundColor: color.danish}">
+    <div class='text-1'>
         Hello login<br />
         <v-btn @click="cli = !cli" color="danish" variant="flat">Login</v-btn>
     </div>

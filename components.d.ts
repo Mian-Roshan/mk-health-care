@@ -8,8 +8,10 @@ declare module 'vue' {
     Default: typeof import('./src/layouts/default/Default.vue')['default']
     HeaderLogo: typeof import('./src/components/HeaderLogo.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    IconBox: typeof import('./src/components/IconBox.vue')['default']
     PageFooter: typeof import('./src/components/PageFooter.vue')['default']
     PageHeader: typeof import('./src/components/PageHeader.vue')['default']
+    Testimonials: typeof import('./src/components/Testimonials.vue')['default']
     View: typeof import('./src/layouts/default/View.vue')['default']
   }
 }

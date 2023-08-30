@@ -51,7 +51,7 @@
     font-size: 11px;
     .action-btn {
       width:100%;
-      background-color: #FAB915;
+      background-color: $primary;
       border-radius: 18px;
       padding: 30px ;
       height: 100%;

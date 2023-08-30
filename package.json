@@ -14,6 +14,7 @@
     "core-js": "^3.29.0",
     "pinia": "^2.0.0",
     "roboto-fontface": "*",
+    "swiper": "^10.2.0",
     "unplugin-auto-import": "^0.16.6",
     "unplugin-vue-router": "^0.6.4",
     "vite-plugin-components": "^0.13.3",

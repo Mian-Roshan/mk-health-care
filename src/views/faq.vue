@@ -1,4 +1,5 @@
 <script setup lang='ts'>
+ import { ref } from 'vue'
 const faqs = ref([
   {
     question: 'What is MK Health Care?',
